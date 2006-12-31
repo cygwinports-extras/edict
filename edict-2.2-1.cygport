@@ -1,0 +1,13 @@
+DESCRIPTION="CLI for Merriam Webster online dictionaries"
+HOMEPAGE="http://edictionary.sourceforge.net/"
+SRC_URI=mirror://sourceforge/edictionary/${P}.tar.gz
+SRC_DIR=${PN}
+
+src_compile() { :; }
+src_test() { :; }
+src_install() {
+	cd ${S}
+	dobin edict
+	dosym edict /usr/bin/ethes
+	dodoc ReleaseNotes
+}
