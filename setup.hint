@@ -1,4 +1,4 @@
 category: Web Text
-requires: cygwin perl
+requires: perl
 sdesc: "Command-line online dictionary"
 ldesc: "Command-line interface to online dictionaries"
